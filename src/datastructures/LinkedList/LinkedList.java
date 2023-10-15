@@ -50,6 +50,21 @@ public class LinkedList {
         }
             length++;
     }
+    //Removing the first value from the list
+    public Node removeFirst()
+    {
+        if(length==0)
+            return null;
+        Node temp=head;
+        head=head.next;
+        temp.next=null;
+        length--;
+        if(length==0)
+        {
+            tail=null;
+        }
+        return temp;
+    }
     //Removing the last value from the list
     public Node removeLast()
     {
@@ -72,7 +87,30 @@ public class LinkedList {
         }
         return temp;
     }
+//get value from index
+    public Node get(int index)
+    {
+        if(index<0 || index>=length)
+            return null;
+        Node temp=head;
+        for(int i=0;i<index;i++)
+        {
+            temp=temp.next;
+        }
+        return temp;
+    }
 
+    //Set Method
+    public boolean set(int index, int value)
+    {
+        Node temp=get(index);
+        if(temp!=null)
+        {
+            temp.value=value;
+            return true;
+        }
+        return false;
+    }
     public void printList() {
         Node temp = head;
         while (temp != null) {
