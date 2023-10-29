@@ -12,5 +12,9 @@ public class Main {
       //  ls.printList();
         ls.removeLast();
         ls.printList();
+        ls.remove(4);
+        ls.printList();
+        ls.reverse();
+        ls.printList();
     }
 }
