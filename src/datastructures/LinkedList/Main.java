@@ -16,5 +16,13 @@ public class Main {
         ls.printList();
         ls.reverse();
         ls.printList();
+
+        DoublyLinkedList myDLL= new DoublyLinkedList(7);
+        myDLL.getHead();
+        myDLL.getTail();
+        myDLL.getLength();
+        myDLL.get(2);
+        myDLL.set(2,4);
+        myDLL.remove(4);
     }
 }
