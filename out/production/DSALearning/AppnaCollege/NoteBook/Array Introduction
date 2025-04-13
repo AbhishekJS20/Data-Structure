@@ -1,0 +1,11 @@
+defining an Array
+type[] arrayName = new type[size];
+int[] marks = new int[3];
+
+ int size is 4 bytes
+so it will tale 4*3= 12 bytes
+
+2D array
+type[][] arrayName = new type[row][col];
+int[][] marks = new int[3][5];
+
