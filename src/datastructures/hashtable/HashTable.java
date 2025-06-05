@@ -5,8 +5,8 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class HashTable {
-    private int size=7;
-    private Node[] dataMap;
+    private final int size=7;
+    private final Node[] dataMap;
 
     class Node{
         String key;
