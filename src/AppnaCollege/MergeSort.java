@@ -1,17 +1,17 @@
 package AppnaCollege;
 
-public class MergeShot {
-    public static void devide(int [] arr, int si, int ei){
+public class MergeSort {
+    public static void divide(int [] arr, int si, int ei){
        while (si>=ei){
            return;
        }
         int mid = si + (ei - si) / 2;
-        devide(arr,si,mid);
-        devide(arr,mid+1,ei);
-        conquence(arr,si,mid,ei);
+        divide(arr,si,mid);
+        divide(arr,mid+1,ei);
+        consequence(arr,si,mid,ei);
     }
 
-    private static void conquence(int[] arr, int si, int mid, int ei) {
+    private static void consequence(int[] arr, int si, int mid, int ei) {
         int merge[] =new int[ei-si+1];
         int idx1= si;
         int idx2 = mid+1;
@@ -40,7 +40,7 @@ public class MergeShot {
 
     public static void main(String[] args) {
         int[] n = {3,5,1,4,6,7};
-        devide(n,0,n.length-1);
+        divide(n,0,n.length-1);
         for (int i = 0; i < n.length; i++) {
             System.out.println(n[i]);
 
