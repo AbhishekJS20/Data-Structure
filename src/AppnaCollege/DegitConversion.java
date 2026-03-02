@@ -1,6 +1,6 @@
 package AppnaCollege;
 
-public class BinaryToDigit {
+public class DegitConversion {
     public static int toDigit(int num){
         int munum = num;
         int pow =0;
@@ -13,9 +13,21 @@ public class BinaryToDigit {
         }
         return decimal;
     }
+    public static int toBinary(int num){
+        int pow =0;
+        int binimal = 0;
+        while (num>0){
+            int rem = num % 2;
+            binimal = binimal+ (rem * (int) Math.pow(10,pow));
+            pow++;
+            num = num/2;
+        }
+        return binimal;
+    }
 
     public static void main(String[] args) {
         System.out.println(toDigit(101));
+        System.out.println(toBinary(5));
 
     }
 }
