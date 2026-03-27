@@ -1,0 +1,45 @@
+left shift
+N << i
+2 << 1(Position)
+010 << 1
+100
+
+Right Shift
+N >> i
+2 >> 1(Position)
+010 >> 1
+001
+
+GetBit -- get the 3rd bit( position =2) of number n. (n= 0101)
+1<<2
+0001<<2
+0010 & 0101
+0001
+
+SetBit
+set the 2nd bit(position =1) of number n (n=0101)
+1<<1
+0001<<1
+=0010 & 0101
+= 0111->7
+
+
+ClearBit
+bit mask 1<<i
+operation ANd and NOT
+0001<<2= 0100
+~(0100) --> 1011
+1011 & 0101
+=0001
+
+
+updateBit
+for 1 to 0
+bit mask 1<<i
+operation AND with NOT
+
+for 0 to 1
+bit mask 1<<i
+operation OR
+
+
